@@ -15,6 +15,12 @@ class StreamWrapper
     private $stream;
 
     /**
+     * @var ?resource
+     * @see https://www.php.net/manual/en/class.streamwrapper.php#streamwrapper.props.context
+     */
+    public $context;
+
+    /**
      * Defines the filesystem map.
      *
      * @param FilesystemMap $map
